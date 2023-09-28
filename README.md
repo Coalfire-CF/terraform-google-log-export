@@ -1,6 +1,21 @@
 # Google Cloud Log Export Terraform Module
 
+## Description
 This module allows you to create log exports at the project, folder, organization, or billing account level.
+
+FedRAMP Compliance: High
+
+### Usage
+```
+module "log-export" {
+    source = "github.com/Coalfire-CF/terraform-gcp-log-export"
+
+    log_sink_name = "log-sink-name"
+    destination_uri = "storage.googleapis.com/name-of-bucket"
+
+    parent_resource_id = 
+}
+```
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
