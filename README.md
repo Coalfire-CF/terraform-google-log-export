@@ -1,7 +1,9 @@
+![Coalfire](coalfire_logo.png)
+
 # Google Cloud Log Export Terraform Module
 
 ## Description
-This module allows you to create log exports at the project, folder, organization, or billing account level.
+This module allows you to create log exports at the project, folder, organization, or billing account level. Coalfire has tested this module with Terraform version 1.5.0 and the Hashicorp Google provider versions 4.70 - 5.0.
 
 FedRAMP Compliance: High
 
