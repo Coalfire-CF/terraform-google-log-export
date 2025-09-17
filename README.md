@@ -61,7 +61,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_destination_uri"></a> [destination\_uri](#input\_destination\_uri) | The self\_link URI of the destination resource (This is available as an output coming from one of the destination submodules) | `string` | n/a | yes |
-| <a name="input_exclusions"></a> [exclusions](#input\_exclusions) | (Optional) A list of sink exclusion filters. | <pre>list(object({<br>    name        = string,<br>    description = string,<br>    filter      = string,<br>    disabled    = bool<br>  }))</pre> | `[]` | no |
+| <a name="input_exclusions"></a> [exclusions](#input\_exclusions) | (Optional) A list of sink exclusion filters. | <pre>list(object({<br/>    name        = string,<br/>    description = string,<br/>    filter      = string,<br/>    disabled    = bool<br/>  }))</pre> | `[]` | no |
 | <a name="input_filter"></a> [filter](#input\_filter) | The filter to apply when exporting logs. Only log entries that match the filter are exported. Default is '' which exports all logs. | `string` | `""` | no |
 | <a name="input_include_children"></a> [include\_children](#input\_include\_children) | Only valid if 'organization' or 'folder' is chosen as var.parent\_resource.type. Determines whether or not to include children organizations/folders in the sink export. If true, logs associated with child projects are also exported; otherwise only logs relating to the provided organization/folder are included. | `bool` | `false` | no |
 | <a name="input_log_sink_name"></a> [log\_sink\_name](#input\_log\_sink\_name) | The name of the log sink to be created. | `string` | n/a | yes |
