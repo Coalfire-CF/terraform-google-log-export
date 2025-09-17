@@ -51,7 +51,7 @@ jobs:
      
       
     - name: Create comments with Checkov results
-      uses: actions/github-script@v5
+      uses: actions/github-script@v8
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
