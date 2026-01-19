@@ -1,36 +1,19 @@
-name: Tag and Release
+name: Org Release
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  actions: read
+
 on:
   pull_request:
     types:
-    - closed
+      - closed
     branches:
-    - main
-  workflow_call:
-    
-jobs:
-  release:
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        ref: ${{ github.sha }}
-        fetch-depth: '0'
+      - main
 
-    - name: Bump version and push tag
-      id: create_tag
-      uses: anothrNick/github-tag-action@1.61.0 
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        WITH_V: true
-        DEFAULT_BUMP: patch
- 
-    - name: Create release
-      uses: "marvinpinto/action-automatic-releases@latest"
-      with:
-        repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "${{ steps.create_tag.outputs.tag }}"
-        title: "Release ${{ steps.create_tag.outputs.tag }}"
-        draft: false
-        prerelease: false
+jobs:
+  create-release:
+    uses: Coalfire-CF/Actions/.github/workflows/org-release.yml@v0.2.1
+    secrets: inherit
