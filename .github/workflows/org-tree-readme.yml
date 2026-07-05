@@ -1,0 +1,16 @@
+name: Update README Tree on PR
+
+on:
+  pull_request:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  readme-tree:
+    uses: Coalfire-CF/Actions/.github/workflows/org-tree-readme.yml@72d0360b99f80252dda40f6dfefc252f5a66edb3 # v0.10.0
+    with:
+      commit_message: "chore: update README tree"
+      exclude_pattern: ".git|node_modules|.github|dist|build"
+      working_directory: "."

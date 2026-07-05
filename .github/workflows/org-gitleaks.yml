@@ -1,0 +1,7 @@
+name: Gitleaks
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  gitleaks:
+    uses: Coalfire-CF/Actions/.github/workflows/org-gitleaks-pr.yml@72d0360b99f80252dda40f6dfefc252f5a66edb3 # v0.10.0
