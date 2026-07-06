@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/Coalfire-CF/terraform-google-log-export/compare/v1.1.0...v1.1.1) (2026-07-06)
+
+
+### Miscellaneous
+
+* **deps:** bump actions/github-script from 8 to 9 ([#76](https://github.com/Coalfire-CF/terraform-google-log-export/issues/76)) ([4b65ae5](https://github.com/Coalfire-CF/terraform-google-log-export/commit/4b65ae5698a8f0d6ec23025ae1d14a263a720e7c))
+
 ## [1.1.0](https://github.com/Coalfire-CF/terraform-google-log-export/compare/v1.0.4...v1.1.0) (2026-07-05)
 
 
