@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.1.2](https://github.com/Coalfire-CF/terraform-google-log-export/compare/v1.1.1...v1.1.2) (2026-07-23)
+
+
+### Bug Fixes
+
+* **release:** pass secrets to org-release (App token for release-please) ([#80](https://github.com/Coalfire-CF/terraform-google-log-export/issues/80)) ([1bd86c8](https://github.com/Coalfire-CF/terraform-google-log-export/commit/1bd86c8a5b65d70b7191fb330e84d77b59051f8a))
+
+
+### Miscellaneous
+
+* adopt Actions v0.12.1 (bypass auto-merge + event-driven re-merge) ([352cdc2](https://github.com/Coalfire-CF/terraform-google-log-export/commit/352cdc2f5328d15b662fc7bbf894d63f5788f3c0))
+* **ci:** adopt Coalfire-CF/Actions v0.11.3 ([#78](https://github.com/Coalfire-CF/terraform-google-log-export/issues/78)) ([fff8cda](https://github.com/Coalfire-CF/terraform-google-log-export/commit/fff8cda43556956040eb43febe76255a4357f668))
+* **deps:** bump the org-actions group with 10 updates ([#82](https://github.com/Coalfire-CF/terraform-google-log-export/issues/82)) ([5d3b982](https://github.com/Coalfire-CF/terraform-google-log-export/commit/5d3b98287cf2d29db06397f7800b76873b263dc0))
+* **deps:** bump the org-actions group with 10 updates ([#83](https://github.com/Coalfire-CF/terraform-google-log-export/issues/83)) ([b335203](https://github.com/Coalfire-CF/terraform-google-log-export/commit/b33520334a4713fa62c5d30838b8487c7068d060))
+* **deps:** bump the org-actions group with 10 updates ([#85](https://github.com/Coalfire-CF/terraform-google-log-export/issues/85)) ([cbb45d6](https://github.com/Coalfire-CF/terraform-google-log-export/commit/cbb45d62848296907f181789c906c55c6e4a28e8))
+
 ## [1.1.1](https://github.com/Coalfire-CF/terraform-google-log-export/compare/v1.1.0...v1.1.1) (2026-07-06)
 
 
