@@ -3,11 +3,13 @@
 # Google Cloud Log Export Terraform Module
 
 ## Description
+
 This module allows you to create log exports at the project, folder, organization, or billing account level. Coalfire has tested this module with Terraform version 1.5.0 and the Hashicorp Google provider versions 4.70 - 5.0.
 
 FedRAMP Compliance: High
 
 ### Usage
+
 ```
 module "log-export" {
     source = "github.com/Coalfire-CF/terraform-gcp-log-export"
@@ -79,30 +81,3 @@ No modules.
 | <a name="output_parent_resource_id"></a> [parent\_resource\_id](#output\_parent\_resource\_id) | The ID of the GCP resource in which you create the log sink. |
 | <a name="output_writer_identity"></a> [writer\_identity](#output\_writer\_identity) | The service account that logging uses to write log entries to the destination. |
 <!-- END_TF_DOCS -->
-
-## Tree
-
-```text
-.
-|-- CHANGELOG.md
-|-- CONTRIBUTING.md
-|-- LICENSE
-|-- README.md
-|-- coalfire_logo.png
-|-- main.tf
-|-- modules
-|   |-- pubsub
-|   |   |-- README.md
-|   |   |-- main.tf
-|   |   |-- outputs.tf
-|   |   |-- variables.tf
-|   |   |-- versions.tf
-|   |-- storage
-|       |-- README.md
-|       |-- main.tf
-|       |-- outputs.tf
-|       |-- variables.tf
-|-- outputs.tf
-|-- release-please-config.json
-|-- variables.tf
-```
