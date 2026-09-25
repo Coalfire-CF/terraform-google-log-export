@@ -1,0 +1,7 @@
+name: "CI: Security Trivy"
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  trivy:
+    uses: Coalfire-CF/Actions/.github/workflows/ci-security-trivy.yml@88e02c851b87f8042147e1ba9f340b49ab1b628b # v1.0.0
