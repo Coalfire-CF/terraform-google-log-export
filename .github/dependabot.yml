@@ -24,7 +24,10 @@ updates:
         exclude-patterns: ["Coalfire-CF/*"]
         update-types: ["minor", "patch"]
   - package-ecosystem: "terraform"
-    directory: "/"
+    directories:
+      - "/"
+      - "/modules/pubsub"
+      - "/modules/storage"
     schedule:
       interval: "daily"
       time: "04:15"
@@ -33,23 +36,12 @@ updates:
       include: "scope"
     labels:
       - "dep/terraform-module"
-  - package-ecosystem: "terraform"
-    directory: "/modules/pubsub"
-    schedule:
-      interval: "daily"
-      time: "04:15"
-    commit-message:
-      prefix: "chore"
-      include: "scope"
-    labels:
-      - "dep/terraform-module"
-  - package-ecosystem: "terraform"
-    directory: "/modules/storage"
-    schedule:
-      interval: "daily"
-      time: "04:15"
-    commit-message:
-      prefix: "chore"
-      include: "scope"
-    labels:
-      - "dep/terraform-module"
+    groups:
+      terraform:
+        applies-to: version-updates
+        group-by: dependency-name
+        patterns: ["*"]
+      terraform-security:
+        applies-to: security-updates
+        group-by: dependency-name
+        patterns: ["*"]
