@@ -4,4 +4,4 @@ on:
     branches: [main]
 jobs:
   gitleaks:
-    uses: Coalfire-CF/Actions/.github/workflows/ci-security-gitleaks.yml@88e02c851b87f8042147e1ba9f340b49ab1b628b # v1.0.0
+    uses: Coalfire-CF/Actions/.github/workflows/ci-security-gitleaks.yml@6b75ed76d73064326039a5fd49fc962614c0f65d # v1.1.1
