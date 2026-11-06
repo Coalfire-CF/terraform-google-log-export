@@ -1,11 +1,15 @@
 # Pull Request Checklist
 
-> Please take a moment to review this checklist carefully — only check items that genuinely apply. This helps maintain code quality, traceability, and review integrity.
+> Please take a moment to review this checklist carefully — only check items that genuinely apply. This helps maintain
+> code quality, traceability, and review integrity.
 
 ---
 
 ## Admin
-- [ ] **Required:** I have read the [contributing guidelines](https://coalfire.atlassian.net/wiki/spaces/CEHOME/pages/2648440862/Pull+Request+Best+Practices) for submitting a PR.
+
+- [ ] **Required:** I have read the [contributing
+  guidelines](https://coalfire.atlassian.net/wiki/spaces/CEHOME/pages/2648440862/Pull+Request+Best+Practices) for
+  submitting a PR.
 
 ---
 
@@ -24,12 +28,14 @@
 ---
 
 ## AI Assistance Disclosure (Required)
-> We encourage responsible AI usage. Disclosure helps reviewers apply extra scrutiny to prevent hallucinations, logic errors, or insecure patterns.
+> We encourage responsible AI usage. Disclosure helps reviewers apply extra scrutiny to prevent hallucinations, logic
+> errors, or insecure patterns.
 
 - [ ] **I used AI assistance while creating this PR**
 - [ ] **I did NOT use AI assistance for this PR**
 
 If AI was used, briefly describe:
+
 - What tools were used (e.g., ChatGPT, Copilot, Claude)
 - What it helped with (e.g., refactoring, test generation, docs)
 - Any areas that may require extra review
@@ -45,6 +51,7 @@ If AI was used, briefly describe:
 - [ ] **Optional:** I have already deployed or validated this change in a real environment.
 
 ### Tested In:
+
 - [ ] Local development environment
 - [ ] Customer environment
 - [ ] Coalfire Sandbox (AWS GovCloud, Azure Gov, GCP, etc.)
